@@ -7,7 +7,7 @@ import DefaultBrowserFromComponent from '../DefaultBrowserFromComponent/DefaultB
 import './CardComponent.css'
 
 
-let globalstr : string; 
+let globalstr: string[] = []; 
 
 // type CardPros = {
 //     title: string;
@@ -81,7 +81,7 @@ function ListOfCards() {
                         <Card.Body>
                         <Button id="bmw-car" variant="primary" style={{margin: '0px 30px 0px 0px'}} onClick={(ev: React.MouseEvent<HTMLButtonElement>) => {
                             //let el = document.getElementById("bmw-car");
-                            globalstr = "BMW"
+                            globalstr[0] = "BMW"
                             handler()
                         }}>Add</Button>
                         <Card.Link href="/moreBMW">more</Card.Link>
@@ -105,7 +105,7 @@ function ListOfCards() {
                         <Card.Body>
                         <Button variant="primary" style={{margin: '0px 30px 0px 0px'}} onClick={(ev: React.MouseEvent<HTMLButtonElement>) => {
                             //let el = document.getElementById("bmw-car");
-                            globalstr = "Audi"
+                            globalstr[1] = "Audi"
                             handler()
                         }}>Add</Button>
                         <Card.Link href="/moreBMW">more</Card.Link>
@@ -127,7 +127,7 @@ function ListOfCards() {
                         <Card.Body>
                         <Button variant="primary" style={{margin: '0px 30px 0px 0px'}} onClick={(ev: React.MouseEvent<HTMLButtonElement>) => {
                             //let el = document.getElementById("bmw-car");
-                            globalstr = "Reno"
+                            globalstr[2] = "Reno"
                             handler()
                         }}>Add</Button>
                         <Card.Link href="/moreBMW">more</Card.Link>
